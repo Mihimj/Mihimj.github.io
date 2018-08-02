@@ -1,48 +1,63 @@
+html{
+	background-color: #090d13;
+}
+#main{
+		background-color: #090d13;
+}
 .team{
 display:inline-block;
 padding: 45px;
 margin:auto;
 border:4px solid black;
  box-shadow: 6px 6px black;
-
-color: red;
+min-width: 200px;
+color: #e6e600;
 }
 
    .team:hover{
    	box-shadow: none;
-color: #e6e600
+color: red;
+background-color: rgba(24, 28, 34,0.9);
+
    }
 
 .team p{
-font-size: 20px;
+font-size: 18px;
 
 }
-#team h1{
-	margin-top: 20px;
+.team h1{
+	margin-top: 15px;
 	color:#fff;
 	text-align: center;
+	font-size: 15px;
 }
-#team{
-	background-color: #090d13;
+
 
 }
 .thumbnail
 
 {
-	border:0px !important;
+	margin-bottom: 90px;
+	border:10px !important;
 	background-color: rgb(24, 28, 34) !important;
 }
 /*.................................................................................................................................*/
 
-.btn btn-info button{
-	width:100px;
+
+#tnn {
+	width:200px!important;
+	height:50px!important;
 	color: white;
 
-   box-shadow: 3px 3px grey;}
+   box-shadow: 3px 3px black;
+margin-left:2%!important;
+position: absolute;
+top:5px;}
    
-   .btn-info button:hover{
+   #tnn:hover{
    	box-shadow: none;
-color: #e6e600
+
+
    }
 
 
@@ -54,18 +69,76 @@ color: #e6e600
 .thumbnail button:hover{
 	box-shadow:none;
 }
-#type{
+.type{
 	color: white;
 	font-size: 40px;
 	padding: 10px;
 }
-#btn{
-	width: 90px;
-	height: 50px;
 
-	margin-left:70px;
-	margin-top: 90px;
-
-	color: white;
-	
+#board{
+	padding: 20px!important;
+	min-width: 28% !important;
+	min-height: 20% !important;
+	display: inline-block !important;
+	border:2px solid #090d13;
 }
+.mat{
+	color:red;
+	display: inline;
+	font-size: 18px;
+}
+
+.example{
+	margin-top: 5%;
+	margin-left: 25%;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+    color:#fff;
+}
+input[type="text"]
+ {
+    font-size: 30px !important;
+    line-height: 3;
+    color:#fff;
+}
+.test3{
+	display: none;
+}
+.mj{
+	box-shadow: none !important;
+}
+
+
+

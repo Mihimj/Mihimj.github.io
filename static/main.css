@@ -8,15 +8,21 @@ title {
 	background-color: #090d13;
 margin:0px;
 padding: 0px;
+min-height: 40px !important;
 }
 #line li{
 	
 display: inline-block;
-padding:0px 15px 10px;
+padding:5px 15px 10px;
 
 
 
 }
+#sub{
+	
+	padding:5px 15px 10px;
+}
+
 
 #line a{
 
@@ -137,5 +143,17 @@ padding: 0px;
 }
 .thumbnail h3:hover{
 	color: red;
+
+}
+#frm1{
+	margin-top: -1px!important;
+}
+#ramz{
+	margin-top: 1px!important;
+	
+}
+.active{
+	padding-bottom:0px !important;
+	margin-top:0px !important;
 
 }

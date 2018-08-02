@@ -22,10 +22,11 @@
 
 }
 .players{
-	width: 100px;
-	height: 100px;
+	width: 1px;
+	height: 1px;
 	border: 1px solid rgba(77, 77, 51,0.2);
 	border-radius: 20px;
+	display:none;
 }
 
 
@@ -50,4 +51,8 @@ max-width: 300px;
 	margin: 50px 24%;
 margin-left: 45%;
 	border-radius: 50px;
+}
+button{
+	background-color: #0f0f0f;
+	border:none;
 }

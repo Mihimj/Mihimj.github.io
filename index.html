@@ -3,9 +3,10 @@
 <head>
 	<title href="index.html">CRICKET BUZZ</title>
 	<link rel="icon" href="C:\Users\MIHIR KUMAR JHA\Desktop\internship\static\t1.jpg">
-	<link rel="stylesheet" type="text/css" href="..\static\main.css">
+	<link rel="stylesheet" type="text/css" href="static\main.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 	<meta charset="utf-8">
+  <meta http-equiv="refresh" content="15">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,22 +52,24 @@ $(document).ready(function(){
 		    		<ul>
            
       			<li class="active"><a href="index.html">Home</a></li>
-      			<li><a href="#team">Teams</a></li>
-      			<li><a href="events.html">Events</a></li>
-      			<li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+      			<li class="active"><a href="#team">Teams</a></li>
+      			<li class="active"><a href="templates\events.html">Events</a></li>
+      			<li class="active"><a href="#about">About Us</a></li>
+            <li class="active"><a href="#contact">Contact Us</a></li>
     		<li class="ff">
-    	<form class="navbar-form navbar-left" method="get" action="data.html" id="frm1">
+    	<form class="navbar-form navbar-left" method="get" action="templates\data.html" id="frm1">
      		 
          <div class="form-group">
          
         		<input id="result" type="text" class="form-control" placeholder="Search" name=firstname>
       
-        </div>
-           <button onclick="startConverting()" type="submit" class="btn btn-default"><i class="fa fa-microphone"> </i></button>
+        
+           
 
-         <button type="submit" class="btn btn-default" onclick="myFunction()"> Submit</i></button>
-      </form>  </li> </ul>
+         <button type="submit" id="sub" class="btn btn-default" onclick="myFunction()"> Submit</i></button></div>
+      </form>  
+
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left"><button onclick="startConverting()" type="submit" class="btn btn-default " id="ramz"><i class="fa fa-microphone"> </i></button></a></li> </ul></li> </ul>
 </div>
    
 	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
@@ -83,21 +86,21 @@ $(document).ready(function(){
     <div class="carousel-inner">
       <div class="item active">
       
-        <img src="..\static\c2.jpg" alt="" style="width:100%;height:500px;">
+        <img src="static\c2.jpg" alt="" style="width:100%;height:500px;">
        <div class="carousel-caption">
         <h2 class="c k" style="font-size: 30px;">A gun is no more dangerous than a cricket bat in the hands of a madman.!!!!</h2>
              </div>
       </div>
 
       <div class="item">
-        <img src="..\static\c1.jpg" alt="" style="width:100%;height:500px;">
+        <img src="static\c1.jpg" alt="" style="width:100%;height:500px;">
       </div>
     
       <div class="item">
-        <img src="..\static\c3.jpg" alt="" style="width:100%;height:500px;">
+        <img src="static\c3.jpg" alt="" style="width:100%;height:500px;">
       </div>
       <div class="item">
-        <img src="..\static\c4.jpg" alt="team" style="width:100%;height:500px;">
+        <img src="static\c4.jpg" alt="team" style="width:100%;height:500px;">
       </div>
     </div>
 </div>
@@ -115,7 +118,7 @@ $(document).ready(function(){
           <div class="row text-center">
             <div class="col-sm-4">
               <div class="thumbnail xyz">
-                  <img id="loading"src="..\static\teams\team.jpg" alt="single">
+                  <img id="loading"src="static\teams\team.jpg" alt="single">
                   <h3 >India</h3>
                   <h5>Current ODI Ranking:2</h5><br>
                   <h5 >Current TEST Ranking:1 </h5><br>
@@ -123,32 +126,32 @@ $(document).ready(function(){
                  <h5>Achievements:WC 1983,WC 2011,T20WC 2007 </h5><br>
 
                
-                  <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="..\static\teams\team\india.html" style="text-decoration:none;color:white ">Know More</a></button>
+                  <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="static\teams\team\india.html" style="text-decoration:none;color:white ">Know More</a></button>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team5.jpg" alt="teams">
+                <img id="loading" src="static\teams\team5.jpg" alt="teams">
                  <h3 >Australia</h3>
                   <h5>Current ODI Ranking:6</h5><br>
                   <h5 >Current TEST Ranking:3 </h5><br>
                    <h5 >Current T-20 Ranking:3 </h5><br>
                  <h5 >Achievements:WC 1887,1999,2003,2007,2015 </h5><br>
-                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="..\static\teams\team\aus.html" style="text-decoration:none; color:white;">Know More</a></button>
+                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="static\teams\team\aus.html" style="text-decoration:none; color:white;">Know More</a></button>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team3.jpg" alt="img">
+                <img id="loading" src="static\teams\team3.jpg" alt="img">
                 
                  <h3 >New Zealand</h3>
                   <h5>Current ODI Ranking:4</h5><br>
                   <h5 >Current TEST Ranking:4 </h5><br>
                    <h5 >Current T-20 Ranking:5 </h5><br>
                  <h5 >Achievements:Champions Trophy 2000</h5><br>
-                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="..\static\teams\team\newz.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color: rgb(136, 24, 27)"><a href="static\teams\team\newz.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
@@ -156,42 +159,42 @@ $(document).ready(function(){
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team4.jpg" alt="img">
+                <img id="loading" src="static\teams\team4.jpg" alt="img">
                 <h3 >Pakistan</h3>
                   <h5>Current ODI Ranking:5</h5><br>
                   <h5 >Current TEST Ranking:7 </h5><br>
                    <h5 >Current T-20 Ranking:1 </h5><br>
                  <h5 >Achievements:WC 1992,T20 WC 2009</h5><br>
              
-                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="..\static\teams\team\paki.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="static\teams\team\paki.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team2.jpg" alt="img">
+                <img id="loading" src="static\teams\team2.jpg" alt="img">
                  <h3 >Srilanka</h3>
                   <h5>Current ODI Ranking:8</h5><br>
                   <h5 >Current TEST Ranking:6 </h5><br>
                    <h5 >Current T-20 Ranking:9 </h5><br>
                  <h5 >Achievements:WC 1996,T20WC 2014</h5><br>
              
-                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="..\static\teams\team\sril.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="static\teams\team\sril.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team6.jpg" alt="img">
+                <img id="loading" src="static\teams\team6.jpg" alt="img">
                  <h3 >Bangladesh</h3>
                   <h5>Current ODI Ranking:7</h5><br>
                   <h5 >Current TEST Ranking:9 </h5><br>
                    <h5 >Current T-20 Ranking:10 </h5><br>
                  <h5 >Achievements:WC Qualifier winner 2016</h5><br>
 
-                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="..\static\teams\team\bang.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(39, 106, 30)"><a href="static\teams\team\bang.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
@@ -199,14 +202,14 @@ $(document).ready(function(){
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team7.jpg"  alt="img">
+                <img id="loading" src="static\teams\team7.jpg"  alt="img">
                 <h3 >South Africa</h3>
                   <h5>Current ODI Ranking:3</h5><br>
                   <h5 >Current TEST Ranking:2 </h5><br>
                    <h5 >Current T-20 Ranking:6 </h5><br>
                  <h5 >Achievements:Constant Semi-finalist</h5><br>
                
-                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="..\static\teams\team\south.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="static\teams\team\south.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
@@ -214,13 +217,13 @@ $(document).ready(function(){
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img  id="loading" src="..\static\teams\team8.jpg" alt="img">
+                <img  id="loading" src="static\teams\team8.jpg" alt="img">
                 <h3 >England</h3>
                   <h5>Current ODI Ranking:1</h5><br>
                   <h5 >Current TEST Ranking:5 </h5><br>
                    <h5 >Current T-20 Ranking:4 </h5><br>
                  <h5 >Achievements:WCT20 2010</h5><br>
-                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="..\static\teams\team\eng.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="static\teams\team\eng.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
             </div>
@@ -228,7 +231,7 @@ $(document).ready(function(){
             <div class="col-sm-4">
               <div class="thumbnail">
 
-                <img id="loading" src="..\static\teams\team9.jpg" alt="img" style="height: 264px;">
+                <img id="loading" src="static\teams\team9.jpg" alt="img" style="height: 264px;">
               
                  <h3 >West Indies</h3>
                   <h5>Current ODI Ranking:9</h5><br>
@@ -237,7 +240,7 @@ $(document).ready(function(){
                  <h5 >Achievements:WC 1975,1979</h5><br>
         
               
-                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="..\static\teams\team\west.html" style="text-decoration:none;
+                <button type="button" class="btn btn-info" style="background-color:  rgb(21, 39, 68)"><a href="static\teams\team\west.html" style="text-decoration:none;
                   color:white;">Know More</a></button>
               </div>
   
@@ -283,6 +286,21 @@ $(document).ready(function(){
           speechRecognizer.lang = 'en-IN';
           speechRecognizer.start();
 
+var myVar1;
+
+function myFunction1() {
+    myVar = setInterval(alertFunc, 4000);
+}
+
+function alertFunc() {
+  speechRecognizer.stop();
+    
+}
+
+myFunction1();
+
+
+
           var finalTranscripts = '';
 
           speechRecognizer.onresult = function(event){
@@ -307,26 +325,7 @@ $(document).ready(function(){
       }
 
       
-      var url = "";
-function myFunction() {
-    var x = document.getElementById("frm1");
-    var station_name = "";
   
-    station_name= x.elements[0].value;
-     
-   
-  url="https://http://cricapi.com/api/playerFinder?apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2&name="+station_name;
-  
-}
-$(document).ready(function(){
-    $("button").click(function(){
-        $.getJSON(url, function(result) {
-            $("h3").append("Station Code :"+result.stations[0].code + "</br> "+"Longitude :"+result.stations[0].lng+"</br>"+"Latitude :"+result.stations[0].lat+"</br> ");
-      console.log(result);
-        });
-    });
-});
-
 
 
 
@@ -338,7 +337,6 @@ $(document).ready(function(){
 
 </body>
 </html>
-
 
 
 
