@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="player.css">
     <script type="text/javascript"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <style >
+          .main{
+            background-image: url("pl.jpg")!important;
+          }
+
+      </style>
  
 
 
@@ -41,7 +47,7 @@ if(firstname==""){
 
 
 $.ajax({
-      url:"http://cricapi.com/api/playerFinder?name="+firstname+"&apikey=baKADTxmUZQpQ792UOoap9EbhZr1",
+      url:"http://cricapi.com/api/playerFinder?name="+firstname+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2",
       dataType: 'json',
       type: 'get',
       cache: false,
@@ -65,7 +71,7 @@ $.ajax({
             }
         }
         
-        var theurl="http://cricapi.com/api/playerStats?pid="+P+"&apikey=baKADTxmUZQpQ792UOoap9EbhZr1";
+        var theurl="http://cricapi.com/api/playerStats?pid="+P+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2";
         var client= new HttpClient();
         client.get(theurl , function(response){
             var response1 = JSON.parse(response);
@@ -228,7 +234,7 @@ document.getElementById("pid").innerHTML = response1.pid;
 
 <div class="main"><center>
 <div class="row">
-   <div style="background: url(//cdx.cricapi.com/images/banner.jpg); border-radius: 10px; min-height: 450px; margin-bottom: 50px;" class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12 playercard" itemscope="" itemtype="http://schema.org/Person">
+   <div style="border-radius: 10px; min-height: 450px; margin-bottom: 50px;" class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12 playercard" itemscope="" itemtype="http://schema.org/Person">
             <center>
                 <div id="playerface">
 				
@@ -706,28 +712,31 @@ document.getElementById("pid").innerHTML = response1.pid;
                     <td><p id="dataBalls4"></p></td>
                     
                    
-                </tr>
-                
-            </tbody></table>s
-            </div>
+             
             
-        </div>
+ 
+    <p id="pid" style="display: none;"></p>
+    <p id="name" style="display: none;"></p>
+    <p id="profile" style="display: none;"></p>
+    <p id="imageURL" style="display: none;"></p>
+    <p id="battingStyle" style="display: none;"></p>
+    <p id="bowlingStyle" style="display: none;"></p>
+    <p id="majorTeams" style="display: none;"></p>
+    <p id="currentAge" style="display: none;"></p>
+    <p id="born" style="display: none;"></p>
+    <p id="fullName" style="display: none;"></p>
+    <p id="country" style="display: none;"></p>
+    <p id="playingRole" style="display: none;"></p>
+    <p id="v" style="display: none;"></p>
+       </tr>
+                
+            </tbody></table>
+            
+    </div></div>
+           </div>
     </div>
 </div>
 </center>
-</div>
-    <p id="pid"></p>
-    <p id="name"></p>
-    <p id="profile"></p>
-    <p id="imageURL"></p>
-    <p id="battingStyle"></p>
-    <p id="bowlingStyle"></p>
-    <p id="majorTeams"></p>
-    <p id="currentAge"></p>
-    <p id="born"></p>
-    <p id="fullName"></p>
-    <p id="country"></p>
-    <p id="playingRole"></p>
-    <p id="v"></p>
+
 </body>
 </html>

@@ -4,61 +4,62 @@
 .main{
 	padding: 0px;
 	margin:0px;
-	background-image: url("51073-unqzmntftm-1486611204.jpg");
+	background-image: url("pl.jpg");
 
 	background-attachment: fixed;
 		background-size: 100%;	
 	color:white;
 	width: 100%;
 }
-.row{
+body{
 
-	
+	background-color:#0f0f0f; 
 }
 
 h2
 {
 	color: white;
 }
+
 #playerbasic table
 {
-	border:1px grey solid;
+	border:1px grey solid !important;
 	color: white;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.65);
 	max-width: 950px;
 }
 #playerbasic td
 {
 	padding: 10px;
-	border: 1px grey solid;
-	background-color: rgba(0,0,0,0.85);
+	border: 1px grey solid !important;
+	background-color: rgba(0,0,0,0.65);
 	max-width: 950px;
 }
 
 #playerbats table
 {
-	border:5px green solid;
+	border:5px white solid !important;
 	color: white;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.65);
 }
 #playerbowls table
 {
-	border:5px green solid;
+	border:5px white solid !important;
 	color: white;
-	background-color: rgba(0,0,0,.85);
+	background-color: rgba(0,0,0,.65);
 }
 #playerbats td
 {
 	padding: 10px;
 	border: 2px white solid;
 	width:50px;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.65);
 }	
 #playerbowls td
 {
 	padding: 10px;
 	border: 2px white solid;
-	background-color: rgba(0,0,0,0.85);	
+	background-color: rgba(0,0,0,0.65);	
 	width:50px;
 	color: white;
 }
@@ -67,19 +68,19 @@ th{
 }
 #teams table
 {
-	border:5px grey solid;
+	border:5px grey solid!important;
 	color: white;
-	background-color: rgba(0,0,0,.85)
+	background-color: rgba(0,0,0,.65)
 	max-width: 950px;
 }
 #teams td
 {
 	padding: 10px;
-	border: 2px grey solid;
-	background-color: rgba(0,0,0,.85);
+	border: 2px grey solid!important;
+	background-color: rgba(0,0,0,.65);
 	max-width: 950px;
 }
 body{
 	width: 100%;
-	background-color: black;
+	background-color: rgba(0,0,0,.65);
 }
