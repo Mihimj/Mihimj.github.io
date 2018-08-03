@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>current matches</title>
+	<link rel="stylesheet" type="text/css" href="current.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+   <style>
+button{
+	width:300px;
+	margin: auto;
+}
+</style>
+</head>
+<body>
+	<center>
+<h1 style="color: #0090c7; font-weight: bolder;">Live Sore</h1>
+<div id="result">
+<div class="comp">
+<h1 id="team1" style="color: #fff;">team1</h1>
+
+<table>
+  
+</table>
+<br>
+<table>
+<button type="button" class="btn btn-warning btn-block" data-toggle="collapse" data-target="#demo1" style="padding 0px; margin-top: 80px;
+  margin-left:25%;width:50%" aria-expanded="true"><h2>SQUAD</h2></button>
+  <div id="demo1" class="collapse in" aria-expanded="true">
+ 
+<div id="t">
+    <tr class="ta">
+      <td class="name">names</td>
+    </tr>
+  </div>
+</div>
+<br><br><br>
+
+
+
+  <tr>
+    <th>Batsman</th>
+    <th>Dismisal</th>
+    <th>Run</th>
+    <th>Balls</th>
+    
+    <th>6's</th>
+    <th>4's</th>
+    <th>SR</th>
+  </tr>
+
+<table>
+  <div id="r1">
+ <tr class="batsman">
+    <td class="name">M.S Dhoni</td>
+    <td class="dis1">Not Out</td>
+    <td class="run1">121</td>
+    <td class="ball1">100</td>
+    <td class="six1">6</td>
+    <td class="four1">15</td>
+     <td class="srti1">98.5</td>
+  </tr>
+ </div>
+</table>
+</table>
+<br>
+<br>
+<table>
+  <tr>
+    <th>Bowler</th>
+    <th>Over</th>
+    <th>Maiden</th>
+    <th>Run</th>
+    <th>Wicket</th>
+    <th>6's</th>
+    <th>4's</th>
+    <th>0's</th>
+    <th>Eco</th>
+  </tr>
+  <table>
+      <div id="baaa">
+    <tr class="tbowling">
+    <td class="bo">VIVEK</td>
+    <td class="ovr">5</td>
+    <td class="mad">0</td>
+    <td class="rn">100</td>
+    <td class="wkt">0</td>
+    <td class="sx">12</td>
+    <td class="fr">5</td>
+    <td class="zro">0</td>
+    <td class="eco">24.0</td>
+   </tr> 
+  </div>   
+  </table>
+</table>
+<br>
+<h1 id="team2" style="color: #fff;">team2</h1>
+<br>
+<table>
+  
+</table>
+
+
+<br>
+<table>
+	<button type="button" class="btn btn-warning btn-block" data-toggle="collapse" data-target="#demo" style="padding 0px; margin-top: 80px;
+  margin-left:25%;width:50%" aria-expanded="true"><h2>SQUAD</h2></button>
+  <div id="demo" class="collapse in" aria-expanded="true">
+ 
+<div id="t2">
+    <tr class="ta2">
+      <td class="name">names</td>
+    </tr>
+  </div>
+</div>
+<br><br><br>
+  <tr>
+    <th>Batsman</th>
+    <th >Dismisal</th>
+    <th>Run</th>
+    <th>Balls</th>
+    
+    <th>6's</th>
+    <th>4's</th>
+    <th>SR</th>
+  </tr>
+
+<table>
+  <div id="r2">
+ <tr class="t2batsman">
+    <td class="nam">M.S Dhoni</td>
+    <td class="dis">Not Out</td>
+    <td class="run">121</td>
+    <td class="ball">100</td>
+    <td class="six">6</td>
+    <td class="four">15</td>
+     <td class="srti">98.5</td>
+  </tr>
+ </div>
+</table>
+</table>
+<br>
+<br>
+<div id="bee">
+<table>
+  <tr>
+    <th>Bowler</th>
+    <th>Over</th>
+    <th>Maiden</th>
+    <th>Run</th>
+    <th>Wicket</th>
+    <th>6's</th>
+    <th>4's</th>
+    <th>0's</th>
+    <th>Eco</th>
+  </tr>
+      
+    <tr class="bowling">
+    <td class="bowler">VIVEK</td>
+    <td class="ovr">5</td>
+    <td class="mad">0</td>
+    <td class="rn">100</td>
+    <td class="wkt">0</td>
+    <td class="sx">12</td>
+    <td class="fr">5</td>
+    <td class="zro">0</td>
+    <td class="eco">24.0</td>
+   </tr>   
+</table>
+</div>
+</div>
+</div>
+</center>
+<script>
+  $(document).ready(function(){
+
+function getParams(){
+                var idx = document.URL.indexOf('?');
+                var params = new Array();
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                    for (var i=0; i<pairs.length; i++){
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+            params = getParams();
+            firstname = unescape(params["firstname"]);
+            console.log(firstname);
+
+
+
+
+
+     var divc= $('.batsman').clone(true);
+$('.batsman').remove();
+
+var t2bat= $('.t2batsman').clone(true);
+$('.t2batsman').remove();
+
+var trbow = $('.tbowling').clone(true);
+$('.tbowling').remove();
+ 
+var rbow = $('.bowling').clone(true);
+$('.bowling').remove();
+
+    var tm = $('.ta').clone(true);
+ $('.ta').remove();
+
+ var tm2 = $('.ta2').clone(true);
+ $('.ta2').remove();
+
+  var nwtm1;
+  var nwtm2; 
+  var t1nm=[];
+  var t2nm=[];
+
+  var newrbow;
+  var newtrbow; 
+  var newdiv;
+  var new2bat;
+  var m =firstname;
+  var newtm1bat;
+  var newdivcmp;
+  var batlen;
+  var bowlen;
+  var fldlen;
+  var temlen;
+  var team1;
+  var team2;
+
+ var b1name = [];
+ var b2name = [];
+ var b1pid =[];
+ var b2pid =[];
+ var b1dis =[];
+ var b2dis =[];
+ var b1run =[];
+ var b2run =[];
+ var b1ball =[];
+ var b2ball =[];
+ var b1six =[];
+ var b2six =[];
+ var b1four =[];
+ var b2four =[];
+ var b1sr =[];
+ var b2sr =[];
+
+ var bownam=[];
+ var bowov=[];
+ var bowmad=[];
+ var bowrun=[];
+ var bowwkt=[];
+ var bowsix=[];
+ var bowfor=[];
+ var bowzer=[];
+ var boweco=[];
+
+ var bownm=[];
+ var bowv=[];
+ var bowmd=[];
+ var bowrn=[];
+ var bowwt=[];
+ var bowsx=[]
+ var bowfr=[];
+ var bowzr=[];
+ var boweo=[];
+ var api="apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2";
+ $(document).ready(function(){
+$.ajax({
+  url:"http://cricapi.com/api/fantasySummary?unique_id="+m+"&"+api,
+  dataType: 'json',
+  type: 'get',
+  cache: false,
+  success: function(data){
+  batlen=data.data.batting.length;
+  bowlen=data.data.bowling.length;
+  fldlen=data.data.fielding.length;
+  temlen=data.data.team.length;
+
+team1=data.data.team[0]["name"];
+team2=data.data.team[1]["name"];
+
+document.getElementById("team1").innerHTML=team1;
+document.getElementById("team2").innerHTML=team2;
+
+
+for(var i=0;i<11;i++)
+{
+  b1name[i]=data.data.team[0].players[i]["name"];
+  b1pid[i]=data.data.team[0].players[i]["pid"];
+  b2name[i]=data.data.team[1].players[i]["name"];
+  b2pid[i]=data.data.team[1].players[i]["pid"];
+ }
+
+ for(var j=0;j<((data.data.batting[0].scores.length)-1);j++) {//tem1
+     newdiv=divc.clone(true);
+     b1dis[j]=data.data.batting[0].scores[j]["dismissal-info"];
+     b1run[j]=data.data.batting[0].scores[j]["R"];
+     b1ball[j]=data.data.batting[0].scores[j]["B"];
+     b1six[j]=data.data.batting[0].scores[j]["6s"];
+     b1four[j]=data.data.batting[0].scores[j]["4s"];
+     b1sr[j]=data.data.batting[0].scores[j]["SR"];
+  if(b1pid[j]==(data.data.batting[0].scores[j].pid))
+     {
+      $(newdiv).find('td.dis1').html(b1dis[j]);
+      $(newdiv).find('td.run1').html(b1run[j]);
+      $(newdiv).find('td.ball1').html(b1ball[j]);
+      $(newdiv).find('td.six1').html(b1six[j]);
+      $(newdiv).find('td.four1').html(b1four[j]);
+      $(newdiv).find('td.srti1').html(b1sr[j]);
+      $('#r1').append(newdiv);
+     }
+       $(newdiv).find('td.name').html(b1name[j]);
+     $('#r1').append(newdiv);
+  }
+
+ for(var j=0 ;j<((data.data.batting[1].scores.length)-1);j++){ //team2
+    new2bat=t2bat.clone(true);
+      b2dis[j]=data.data.batting[1].scores[j]["dismissal-info"];
+      b2run[j]=data.data.batting[1].scores[j]["R"];
+      b2ball[j]=data.data.batting[1].scores[j]["B"];
+      b2six[j]=data.data.batting[1].scores[j]["6s"];
+      b2four[j]=data.data.batting[1].scores[j]["4s"];
+      b2sr[j]=data.data.batting[1].scores[j]["SR"];
+    if(b2pid[j]==(data.data.batting[1].scores[j].pid))
+     {
+      $(new2bat).find('td.dis').html(b2dis[j]);
+      $(new2bat).find('td.run').html(b2run[j]);
+      $(new2bat).find('td.ball').html(b2ball[j]);
+      $(new2bat).find('td.six').html(b2six[j]);
+      $(new2bat).find('td.four').html(b2four[j]);
+      $(new2bat).find('td.srti').html(b2sr[j]);
+
+          $(new2bat).find('td.nam').html(b2name[j]);
+     
+      $('#r2').append(new2bat);
+     }
+    
+   }
+
+for(var j=0;j<((data.data.bowling[0].scores.length));j++) {
+     bownam[j]=data.data.bowling[0].scores[j]["bowler"];
+     bowov[j]=data.data.bowling[0].scores[j]["O"];
+     bowmad[j]=data.data.bowling[0].scores[j]["M"];
+     bowrun[j]=data.data.bowling[0].scores[j]["R"];
+     bowwkt[j]=data.data.bowling[0].scores[j]["W"];
+     bowsix[j]=data.data.bowling[0].scores[j]["6s"];
+     bowfor[j]=data.data.bowling[0].scores[j]["4s"];
+     bowzer[j]=data.data.bowling[0].scores[j]["0s"];
+     boweco[j]=data.data.bowling[0].scores[j]["Econ"];
+     newtrbow=trbow.clone(true);
+     $(newtrbow).find('td.bo').html(bownam[j]);
+     $(newtrbow).find('td.ovr').html(bowov[j]);
+     $(newtrbow).find('td.mad').html(bowmad[j]);
+     $(newtrbow).find('td.rn').html(bowrun[j]);
+     $(newtrbow).find('td.wkt').html(bowwkt[j]);
+     $(newtrbow).find('td.sx').html(bowsix[j]);
+     $(newtrbow).find('td.fr').html(bowfor[j]);
+     $(newtrbow).find('td.zro').html(bowzer[j]);
+     $(newtrbow).find('td.eco').html(boweco[j]);
+     $('#baaa').append(newtrbow);
+}
+
+for(var j=0;j<((data.data.bowling[1].scores.length));j++) {
+     bownm[j]=data.data.bowling[1].scores[j]["bowler"];
+     bowv[j]=data.data.bowling[1].scores[j]["O"];
+     bowmd[j]=data.data.bowling[1].scores[j]["M"];
+     bowrn[j]=data.data.bowling[1].scores[j]["R"];
+     bowwt[j]=data.data.bowling[1].scores[j]["W"];
+     bowsx[j]=data.data.bowling[1].scores[j]["6s"];
+     bowfr[j]=data.data.bowling[1].scores[j]["4s"];
+     bowzr[j]=data.data.bowling[1].scores[j]["0s"];
+     boweo[j]=data.data.bowling[1].scores[j]["Econ"];
+     newrbow=rbow.clone(true);
+     $(newrbow).find('td.bowler').html(bownm[j]);
+     $(newrbow).find('td.ovr').html(bowv[j]);
+     $(newrbow).find('td.mad').html(bowmd[j]);
+     $(newrbow).find('td.rn').html(bowrn[j]);
+     $(newrbow).find('td.wkt').html(bowwt[j]);
+     $(newrbow).find('td.sx').html(bowsx[j]);
+     $(newrbow).find('td.fr').html(bowfr[j]);
+     $(newrbow).find('td.zro').html(bowzr[j]);
+     $(newrbow).find('td.eco').html(boweo[j]);
+     $('#bee').append(newrbow);
+}
+for(var i=0;i<11;i++)
+{
+  t1nm[i]=data.data.team[0].players[i]["name"];
+  newtm1=tm.clone(true);
+  console.log(newtm1);
+   $(newtm1).find('td.name').html(t1nm[i]);
+$('#t').append(newtm1);
+}
+
+for(var i=0;i<11;i++)
+{
+  t2nm[i]=data.data.team[1].players[i]["name"];
+  newtm2=tm2.clone(true);
+  console.log(newtm1);
+   $(newtm2).find('td.name').html(t2nm[i]);
+$('#t2').append(newtm2);
+}
+
+}
+});
+});
+});
+
+
+</script>
+</body>
+</html>

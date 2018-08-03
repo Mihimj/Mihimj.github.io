@@ -1,0 +1,43 @@
+h1{
+	color:white;
+}
+body{
+	width: 100%;
+	background-image: url("the-oval.jpg") !important;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+table {
+	border:5px green solid;
+	color: white;
+	background-color: rgba(0,0,0,0.85);
+	max-width: 100px;
+
+}
+#r1 td,th {
+	color: white;
+	padding: 10px;
+	border: 2px white solid;
+	min-width: 73.88px;
+	background-color: rgba(0,0,0,0.85);
+}
+#r2 td,th {
+	color: white;
+	padding: 10px;
+	border: 2px white solid;
+	min-width: 73.88px;
+	background-color: rgba(0,0,0,0.85);
+}
+td,th {
+	color: white;
+	padding: 10px;
+	border: 2px white solid;
+	min-width: 95px;
+	background-color: rgba(0,0,0,0.85);
+}
+tr{
+  background-color: white;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
