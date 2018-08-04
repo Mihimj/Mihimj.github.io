@@ -47,7 +47,7 @@ if(firstname==""){
 
 
 $.ajax({
-      url:"http://cricapi.com/api/playerFinder?name="+firstname+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2",
+      url:"https://cricapi.com/api/playerFinder?name="+firstname+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2",
       dataType: 'json',
       type: 'get',
       cache: false,
@@ -71,7 +71,7 @@ $.ajax({
             }
         }
         
-        var theurl="http://cricapi.com/api/playerStats?pid="+P+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2";
+        var theurl="https://cricapi.com/api/playerStats?pid="+P+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2";
         var client= new HttpClient();
         client.get(theurl , function(response){
             var response1 = JSON.parse(response);
