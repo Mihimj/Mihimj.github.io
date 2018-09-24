@@ -36,10 +36,16 @@
             firstname = unescape(params["firstname"]);
             console.log(firstname);
 
+ 
+
 
 if(firstname=="Sachin+Tendulkar"){
     firstname="Sachin Ramesh Tendulkar";
 }
+if(firstname=="Virat+kohli"){
+    firstname="Virat kohli";
+}
+
 if(firstname==""){
     firstname="pooooo";
 }
@@ -47,7 +53,7 @@ if(firstname==""){
 
 
 $.ajax({
-      url:"https://cricapi.com/api/playerFinder?name="+firstname+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2",
+      url:"https://cricapi.com/api/playerFinder?name="+firstname+"&apikey=WzMw8OkVPsQVPsQUxqnqpyP8dFb2",
       dataType: 'json',
       type: 'get',
       cache: false,
@@ -71,7 +77,7 @@ $.ajax({
             }
         }
         
-        var theurl="https://cricapi.com/api/playerStats?pid="+P+"&apikey=n7zLr53gcWV2quLL5IjKs4yAuRX2";
+        var theurl="https://cricapi.com/api/playerStats?pid="+P+"&apikey=WzMw8OkVPsQVPsQUxqnqpyP8dFb2";
         var client= new HttpClient();
         client.get(theurl , function(response){
             var response1 = JSON.parse(response);
